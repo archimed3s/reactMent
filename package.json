@@ -1,36 +1,46 @@
 {
-  "name": "reactment",
-  "version": "0.0.1",
-  "description": "My first react app on tsx",
-  "main": "index.tsx",
-  "scripts": {
-    "start": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/archimed3s/reactMent.git"
-  },
-  "author": "Heorhii Kuzmenko",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/archimed3s/reactMent/issues"
-  },
-  "homepage": "https://github.com/archimed3s/reactMent#readme",
-  "dependencies": {
-    "@types/react-dom": "^16.0.5",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2"
-  },
-  "devDependencies": {
-    "@types/node": "^9.6.6",
-    "@types/react": "^16.3.12",
-    "@types/webpack": "^4.1.3",
-    "awesome-typescript-loader": "^5.0.0",
-    "source-map-loader": "^0.2.3",
-    "ts-node": "^6.0.0",
-    "typescript": "^2.8.3",
-    "webpack": "^4.6.0",
-    "webpack-cli": "^2.0.15"
-  }
+	"name": "reactment",
+	"version": "0.0.1",
+	"description": "My first react app on tsx",
+	"main": "index.tsx",
+	"scripts": {
+		"start": "webpack --config webpack.production.config.ts",
+		"dev": "webpack --config webpack.development.config.ts",
+		"test": "jest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/archimed3s/reactMent.git"
+	},
+	"author": "Heorhii Kuzmenko",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/archimed3s/reactMent/issues"
+	},
+	"homepage": "https://github.com/archimed3s/reactMent#readme",
+	"dependencies": {
+		"@types/react": "^16.3.13",
+		"@types/react-dom": "^16.0.5",
+		"@types/react-redux": "^5.0.19",
+		"@types/react-router": "^4.0.24",
+		"react": "^16.3.2",
+		"react-dom": "^16.3.2",
+		"react-redux": "^5.0.7",
+		"react-router": "^4.2.0",
+		"redux": "^4.0.0"
+	},
+	"devDependencies": {
+		"@types/jest": "^22.2.3",
+		"@types/node": "^10.0.0",
+		"@types/source-map": "^0.5.7",
+		"@types/webpack": "^4.1.4",
+		"awesome-typescript-loader": "^5.0.0",
+		"jest": "^22.4.3",
+		"source-map-loader": "^0.2.3",
+		"ts-jest": "^22.4.4",
+		"ts-node": "^6.0.2",
+		"typescript": "^2.8.3",
+		"webpack": "^4.6.0",
+		"webpack-cli": "^2.0.15"
+	}
 }
