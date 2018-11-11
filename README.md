@@ -2,7 +2,7 @@
 
 > The TypeScript React Starter
 
-I assume that you're already using [Node.js](https://nodejs.org/) with [npm](https://www.npmjs.com/).
+I assume that you're already using [Node.js](https://nodejs.org/) with [npm](https://www.npmjs.com/)
 
 ## Getting Started
 
@@ -82,7 +82,44 @@ Generate Documentation:
 npm run doc
 ```
 
-## Concepts
+## Introduction
+
+The main purpose of this React Starter is to...
+
+## Dependencies
+
+#### Plugins
+
+|Name|Status|Install Size|Description|
+|:--:|:----:|:----------:|:----------|
+|[html-webpack-plugin][html-plugin]|![html-plugin-npm]|![html-plugin-size]|Simplifies creation of HTML files (`index.html`) to serve your bundles|
+|[stylelint-webpack-plugin][style-lint]|![style-lint-npm]|![style-lint-size]|A Stylelint plugin for webpack|
+|[mini-css-extract-plugin][mini-css]|![mini-css-npm]|![mini-css-size]|Extracts CSS into separate files. It creates a CSS file per JS file which contains CSS|
+|[purgecss-webpack-plugin][purge-css]|![purge-css-npm]|![purge-css-size]|Plugin to remove unused css|
+
+
+[html-plugin]: https://github.com/ampedandwired/html-webpack-plugin
+[html-plugin-npm]: https://img.shields.io/npm/v/html-webpack-plugin.svg
+[html-plugin-size]: https://packagephobia.now.sh/badge?p=html-webpack-plugin
+[style-lint]: https://github.com/webpack-contrib/stylelint-webpack-plugin
+[style-lint-npm]: https://img.shields.io/npm/v/stylelint-webpack-plugin.svg
+[style-lint-size]: https://packagephobia.now.sh/badge?p=stylelint-webpack-plugin
+[mini-css]: https://github.com/webpack-contrib/mini-css-extract-plugin
+[mini-css-npm]: https://img.shields.io/npm/v/mini-css-extract-plugin.svg
+[mini-css-size]: https://packagephobia.now.sh/badge?p=mini-css-extract-plugin
+[purge-css]: https://github.com/FullHuman/purgecss-webpack-plugin
+[purge-css-npm]: https://img.shields.io/npm/v/purgecss-webpack-plugin.svg
+[purge-css-size]: https://packagephobia.now.sh/badge?p=purgecss-webpack-plugin
+
+#### Framework
+
+|Name|Status|Install Size|Description|
+|:--:|:----:|:----------:|:----------|
+|<a href="https://github.com/facebook/react"><img width="48" height="48" src="https://cdn.worldvectorlogo.com/logos/react.svg"></a>|![react-npm]|![react-size]|A JavaScript library for building user interfaces|
+
+
+[react-npm]: https://img.shields.io/npm/v/react.svg
+[react-size]: https://packagephobia.now.sh/badge?p=react
 
 #### Styling
 
@@ -90,21 +127,42 @@ npm run doc
 |:--:|:----:|:----------:|:----------|
 |<a href="https://github.com/webpack/style-loader">`<style>`</a>|![style-npm]|![style-size]|Add exports of a module as style to DOM|
 |<a href="https://github.com/webpack/css-loader"><img width="48" height="48" src="https://worldvectorlogo.com/logos/css-3.svg"></a>|![css-npm]|![css-size]|Loads CSS file with resolved imports and returns CSS code|
-|<a href="https://github.com/webpack/less-loader"><img width="48" height="48" src="https://worldvectorlogo.com/logos/less-63.svg"></a>|![less-npm]|![less-size]|Loads and compiles a LESS file|
-|<a href="https://github.com/jtangelder/sass-loader"><img width="48" height="48" src="https://worldvectorlogo.com/logos/sass-1.svg"></a>|![sass-npm]|![sass-size]|Loads and compiles a Sass/SCSS file|
-|<a href="https://github.com/shama/stylus-loader"><img width="48" height="48" src="https://worldvectorlogo.com/logos/stylus.svg"></a>|![stylus-npm]|![stylus-size]|Loads and compiles a Stylus file|
 |<a href="https://github.com/postcss/postcss-loader"><img width="48" height="48" src="https://worldvectorlogo.com/logos/postcss.svg"></a>|![postcss-npm]|![postcss-size]|Loads and transforms a CSS/SSS file using [PostCSS](http://postcss.org)|
+|<a href="https://github.com/jtangelder/sass-loader"><img width="48" height="48" src="https://worldvectorlogo.com/logos/sass-1.svg"></a>|![sass-npm]|![sass-size]|Loads and compiles a Sass/SCSS file|
 
 
 [style-npm]: https://img.shields.io/npm/v/style-loader.svg
 [style-size]: https://packagephobia.now.sh/badge?p=style-loader
 [css-npm]: https://img.shields.io/npm/v/css-loader.svg
 [css-size]: https://packagephobia.now.sh/badge?p=css-loader
-[less-npm]: https://img.shields.io/npm/v/less-loader.svg
-[less-size]: https://packagephobia.now.sh/badge?p=less-loader
-[sass-npm]: https://img.shields.io/npm/v/sass-loader.svg
-[sass-size]: https://packagephobia.now.sh/badge?p=sass-loader
-[stylus-npm]: https://img.shields.io/npm/v/stylus-loader.svg
-[stylus-size]: https://packagephobia.now.sh/badge?p=stylus-loader
 [postcss-npm]: https://img.shields.io/npm/v/postcss-loader.svg
 [postcss-size]: https://packagephobia.now.sh/badge?p=postcss-loader
+[sass-npm]: https://img.shields.io/npm/v/sass-loader.svg
+[sass-size]: https://packagephobia.now.sh/badge?p=sass-loader
+
+#### Transpiling
+
+|Name|Status|Install Size|Description|
+|:--:|:----:|:----------:|:----------|
+|<a href="https://github.com/babel/babel-loader"><img width="48" height="48" title="babel-loader" src="https://worldvectorlogo.com/logos/babel-10.svg"></a>|![babel-npm]|![babel-size]|Loads TypeScript like JavaScript and transpiles to ES5 using <a href="https://github.com/babel/babel">Babel</a>|
+
+
+[babel-npm]: https://img.shields.io/npm/v/babel-loader.svg
+[babel-size]: https://packagephobia.now.sh/badge?p=babel-loader
+
+#### Linting & Testing
+
+|Name|Status|Install Size|Description|
+|:--:|:----:|:----------:|:----------|
+|<a href="https://github.com/webpack/mocha-loader"><img width="48" height="48" src="https://worldvectorlogo.com/logos/mocha.svg"></a>|![mocha-npm]|![mocha-size]|Tests with mocha (Browser/NodeJS)|
+|<a href="https://github.com/MoOx/eslint-loader"><img width="48" height="48" src="https://worldvectorlogo.com/logos/eslint.svg"></a>|![eslint-npm]|![eslint-size]|PreLoader for linting code using ESLint|
+|<a href="https://github.com/webpack-contrib/jshint-loader"><img width="48" height="20.64" src="http://jshint.com/res/jshint-dark.png"></a>|![jshint-npm]|![jshint-size]|PreLoader for linting code using JSHint|
+
+[jest-npm]: https://img.shields.io/npm/v/mocha-loader.svg
+[jest-size]: https://packagephobia.now.sh/badge?p=mocha-loader
+[eslint-npm]: https://img.shields.io/npm/v/eslint-loader.svg
+[eslint-size]: https://packagephobia.now.sh/badge?p=eslint-loader
+[jshint-npm]: https://img.shields.io/npm/v/jshint-loader.svg
+[jshint-size]: https://packagephobia.now.sh/badge?p=jshint-loader
+[jscs-npm]: https://img.shields.io/npm/v/jscs-loader.svg
+[jscs-size]: https://packagephobia.now.sh/badge?p=jscs-loader
